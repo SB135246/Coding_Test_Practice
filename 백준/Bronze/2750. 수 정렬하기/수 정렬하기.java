@@ -8,13 +8,14 @@ public class Main{
         int N = Integer.parseInt(br.readLine());
         int[] arr = new int[N];
         for(int i=0; i<N; i++){
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            arr[i] = Integer.parseInt(st.nextToken());
+            arr[i] = Integer.parseInt(br.readLine());
         }
         Arrays.sort(arr);
         
+        StringBuilder sb = new StringBuilder();
         for(int i=0; i<N; i++){
-            System.out.println(arr[i]);
+            sb.append(arr[i]).append("\n");
         }
+        System.out.print(sb);
     }
 }
